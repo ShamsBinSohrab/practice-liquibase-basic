@@ -1,0 +1,26 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "change set using json",
+        "author": "shams json",
+        "changes": [
+          {
+            "update": {
+              "tableName": "person",
+              "columns": [
+                {
+                  "column": {
+                    "name": "email",
+                    "value": "shams@welldev.io"
+                  }
+                }
+              ],
+              "where": "name='Shams Bin Sohrab'"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

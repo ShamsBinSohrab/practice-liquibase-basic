@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: any id
+      author: Shams - YML
+      changes:
+        - insert:
+            tableName: person
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: name
+                  value: 'Tom Hanks'
+              - column:
+                  name: email
+                  value: 'hanks@gmail.com'
+
+  - changeSet:
+      id: 'new change set id'
+      author: 'Shams - YML 2'
+      changes:
+        - update:
+            tableName: person
+            columns:
+              - column:
+                  name: email
+                  value: 'hanks@yahoo.com'
+            where: name='Tom Hanks'
+
